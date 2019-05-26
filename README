@@ -1,0 +1,13 @@
+# Spotwelder
+Spotwelder for Lithium Akku's
+
+This is a Spotwelder for Akkupack welding.
+
+Parts list:
+Arduino Nano
+16x2 LCD
+Rotary Switch
+MOT (later get a switching power supply)
+H11AA1 for zero-crossing
+SSR
+
