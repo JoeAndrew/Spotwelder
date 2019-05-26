@@ -1,13 +1,30 @@
-# Spotwelder
-Spotwelder for Lithium Akku's
-
-This is a Spotwelder for Akkupack welding.
-
-Parts list:
-Arduino Nano
-16x2 LCD
-Rotary Switch
-MOT (later get a switching power supply)
-H11AA1 for zero-crossing
-SSR
-
+/*
+ * MOT SpotWelder with Arduino Nano and SSR
+ * 
+ * impulse Values 1-20x
+ * preweld Time Values 0-300 ms
+ * pause Time Values 0-500 ms
+ * weld Time Values 0-1000 ms
+ * pause befor new 0-150 ms
+ * 
+ * // if weld Time = 0 => Manualweld //just now without funktion
+ * 
+ * Displayed value/10ms only
+ * 
+ * Simple Click -> Settings
+ * Double Click -> Load from EEprom
+ * Triple Click -> Save to EEprom
+ * ----
+ * in Settings: 
+ *      1 Click: Esc, continue without new settings
+ *      2 Click: Enter, store the setting
+ *      3 Click: Nope
+ * Cheat: from Settings/Weldtime  with Longclick step into SecretMenu
+ * 
+ * in SecretMenu
+ *  can be set 50/60Hz basis (name Hz)
+ *  SinusMax delay for ZeroCross ± 1/(4*Hz) setting (ca. ±5000µsec)
+ *  
+ * ----
+ * 
+*/
